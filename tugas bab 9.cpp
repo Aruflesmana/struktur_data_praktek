@@ -5,21 +5,18 @@
 using namespace std;
 
 main (void)
-
 {
-
  int cek = 0, data[8], x, hapus;
  char pil;
  do
  {
  cout << "Ujian Praktikum Struktur Data Queque" << endl;
   cout << endl;
-  printf ("d. Masukan Data Antrian\n");
-  printf ("e. Hapus Data Antrian\n");
-  printf ("n. Lihat Data Antrian\n");
-  printf ("y. Exit Program\n");
+  printf ("a. Masukan Data Antrian\n");
+  printf ("b. Hapus Data Antrian\n");
+  printf ("c. Lihat Data Antrian\n");
+  printf ("d. Exit Program\n");
   cout << endl;
-
   printf ("Ketikan huruf dari salah satu pilihan diatas : ");
   pil = getche();
   cout << endl;
@@ -54,7 +51,7 @@ main (void)
           data[cek - 1] = NULL;
           cek--;
           cout << endl;
-          printf ("Yaki anda ingin data ini dihapus ?");
+          printf ("Yakin anda ingin data ini dihapus ?");
           cout << endl;
           printf ("\nData dengan nilai = %i akan terhapus. [Tekan Enter]", hapus);
          }
