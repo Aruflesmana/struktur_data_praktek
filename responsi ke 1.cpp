@@ -5,26 +5,21 @@
 #include <string.h>
 #include <windows.h>
 #define maks 100
-
 using namespace std;
-
 COORD coordinate;
 void gotoxy(int x,int y){
     coordinate.X=x; coordinate.Y=y;
     SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),coordinate);
 }
-
 struct data
 {
 int nim;
 char nama;
-float strukdat;
-float arsikom;
-float jarkom;
-float pbo;
-float so;
+float strukdata;
+float arsitekturkomputer;
+float jaringankomputer;
+float sistemoprasi;
 }temp,c;
-
 int main()
 {
 data dt[maks];
@@ -53,13 +48,12 @@ do{
             cout<<"BANYAK DATA YANG DI INPUT : ";cin>>n;
             cout<<"================================="<<endl;
             for(i=1;i<=n;i++){
-                cout<<"NIM      : " ; cin>>dt[i].nim;
-                cout<<"NAMA     : " ; cin>>dt[i].nama;
-                cout<<"STRUKDAT : " ; cin>>dt[i].strukdat;
-                cout<<"ARSIKOM  : " ; cin>>dt[i].arsikom;
-                cout<<"JARKOM   : " ; cin>>dt[i].jarkom;
-                cout<<"PBO      : " ; cin>>dt[i].pbo;
-                cout<<"SO       : " ; cin>>dt[i].so;
+                cout<<"NIM                   : " ; cin>>dt[i].nim;
+                cout<<"NAMA                  : " ; cin>>dt[i].nama;
+                cout<<"STRUKDATA             : " ; cin>>dt[i].strukdata;
+                cout<<"ARSITEKTURKOMPUTER    : " ; cin>>dt[i].arsitekturkomputer;
+                cout<<"JARINGANKOMPUTER      : " ; cin>>dt[i].jaringankomputer;
+                cout<<"SISTEMOPRASI          : " ; cin>>dt[i].sistemoprasi;
                 cout<<"================================="<<endl;
             }
             cout<<endl;
@@ -78,16 +72,15 @@ do{
             cout <<" |===========================================================================================| \n";
             cout <<" |+|+|+|+|+|+|+|+|                    DATA NILAI MAHASISWA                   |+|+|+|+|+|+|+|+| \n";
             cout <<" |===========================================================================================| \n";
-            cout <<" |         NIM         |         NAMA         |  STRUKDAT  |  ARSIKOM  |  JARKOM  | PBO | SO | \n";
+            cout <<" |         NIM         |         NAMA         |  STRUKDATA  |  ARSITEKTURKOMPUTER |  JARINGANKOMPUTER | SISTEMOPRASI | \n";
             cout <<" |===========================================================================================| \n";
             for(i=1;i<=n;i++){
                 gotoxy(0,4+i);  cout <<" | " << dt[i].nim;
                 gotoxy(21,4+i); cout <<" | " << dt[i].nama;
-                gotoxy(41,4+i); cout <<" | " << dt[i].strukdat;
-                gotoxy(50,4+i); cout <<" | " << dt[i].arsikom;
-                gotoxy(58,4+i); cout <<" | " << dt[i].jarkom;
-                gotoxy(61,4+i); cout <<" | " << dt[i].pbo;
-                gotoxy(63,4+i); cout <<" | " << dt[i].so;
+                gotoxy(41,4+i); cout <<" | " << dt[i].strukdata;
+                gotoxy(50,4+i); cout <<" | " << dt[i].arsitekturkomputer;
+                gotoxy(58,4+i); cout <<" | " << dt[i].jaringankompuer;
+                gotoxy(63,4+i); cout <<" | " << dt[i].sistemoprasi;
                 gotoxy(93,4+i); cout <<" | " << endl;
             }
             cout <<" |===========================================================================================| \n";
@@ -106,11 +99,10 @@ do{
             if (temp.nim==c.nim){
                 cout<<"NIM      : "<<dt[i].nim<<endl;
                 cout<<"NAMA     : "<<dt[i].nama<<endl;
-                cout<<"STRUKDAT : "<<dt[i].strukdat<<endl;
-                cout<<"ARSIKOM  : "<<dt[i].arsikom<<endl;
-                cout<<"JARKOM   : "<<dt[i].jarkom<<endl;
-                cout<<"PBO      : "<<dt[i].pbo<<endl;
-                cout<<"SO       : "<<dt[i].so<<endl;
+                cout<<"STRUKDATA : "<<dt[i].strukdat<<endl;
+                cout<<"ARSITEKTURKOMPUTER  : "<<dt[i].arsitekturkomputer<<endl;
+                cout<<"JARINGANKOMPUTER   : "<<dt[i].jaringankomputer<<endl;
+                cout<<"SISTEMOPRASI       : "<<dt[i].sistemoprasi<<endl;
                 cout<<"=================================================="<<endl;
             }else{
                 cout<<"\n=================================================="<<endl;
