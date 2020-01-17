@@ -2,33 +2,28 @@
 #include <stdio.h>
 #include <conio.h>
 #include <math.h>
-
 using namespace std;
-
 main()
 {
 int h,hb=15000,hs=25000,hn=20000,h1,h2,h3,i,j,m;
-
 struct data_motor
 {
      char merk[15];
      char model[15];
      char mesin[15];
 } mtr[10];
-
  cout<<"==============================="<<endl;
  cout<<"Selamat Datang di Bengkel Motor"<<endl;
  cout<<"==============================="<<endl;
  cout<<endl;
  cout<<"Silahkan Pilih Jenis Motor :"<<endl;
  cout<<endl;
- cout<<"1. Bebek (Biaya Rp. 15.000)"<<endl;
+ cout<<"1. Bebek (Biaya Rp. 20.000)"<<endl;
  cout<<"2. Sport (Biaya Rp. 25.000)"<<endl;
- cout<<"3. Naked (Biaya Rp. 20.000)"<<endl;
+ cout<<"3. Naked (Biaya Rp. 30.000)"<<endl;
  cout<<endl;
  cout<<"Pilih : ";cin>>m;
  cout<<endl;
- 
 if(m==1){
  cout<<"Jumlah Motor = ";cin>>j;
  cout<<endl;
@@ -60,7 +55,6 @@ if(m==1){
  cout<<endl;
  cout<<"==============================="<<endl;
 }
-
 else if(m==2){
  cout<<"Jumlah Motor = ";cin>>j;
  cout<<endl;
@@ -92,7 +86,6 @@ else if(m==2){
  cout<<endl;
  cout<<"==============================="<<endl;
 }
-
 else if(m==3){
  cout<<"Jumlah Motor = ";cin>>j;
  cout<<endl;
@@ -122,12 +115,9 @@ else if(m==3){
  cout<<"Silahkan Bayar Rp. "<<h<<endl;
  cout<<"Terima Kasih"<<endl;
  cout<<endl;
- cout<<"==============================="<<endl;
 }
-
 else{
  cout<<"Jenis Motor Tidak Ada"<<endl;
 }
-
 getch();
 }
