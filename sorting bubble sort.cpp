@@ -1,4 +1,4 @@
-  
+
 #include <iostream>
 #include <stdio.h>
 #include <conio.h>
@@ -12,7 +12,6 @@ void gotoxy(int x,int y){
     coordinate.X=x; coordinate.Y=y;
     SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),coordinate);
     }
-
 void setcolor(unsigned short color)
 {
     HANDLE hCon = GetStdHandle(STD_OUTPUT_HANDLE);
