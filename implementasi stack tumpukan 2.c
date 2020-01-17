@@ -76,4 +76,3 @@ printf("TIDAK ADA DALAM PILIHAN");
    while((pilihan>=1) && (pilihan<=3));
 getch();
 }
-
