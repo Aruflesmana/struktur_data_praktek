@@ -1,9 +1,7 @@
 #include<iostream>
 #include<stdlib.h>
 #include<conio.h>
-
 using namespace std;
-
 int main()
 {
 int satuan,z,p,konversi;
@@ -11,13 +9,11 @@ float suhu,c,r,f,k,berat,ukur;
 char ulang;
 do{
     system("cls");
-    cout<<"\t||+|+|+| KONVERSI SATUAN SUHU |+|+|+||"<<endl;
-    cout<<"\t|1. KELVIN                         |"<<endl;
-    cout<<"\t|2. CELCIUS                        |"<<endl;
-    cout<<"\t|3. FAHRENHEIT                     |"<<endl;
-    cout<<"\t|4. REAMUR                         |"<<endl;
-    cout<<"\t|                                  |"<<endl;
-    cout<<"\t|==================================|"<<endl;
+    cout<<"\tKONVERSI SATUAN SUHU\n"<<endl;
+    cout<<"\t 1. KELVIN\n"<<endl;
+    cout<<"\t 2. CELCIUS\n"<<endl;
+    cout<<"\t 3. FAHRENHEIT\n"<<endl;
+    cout<<"\t 4. REAMUR\n"<<endl;
     cout<<endl;
     cout<<"\tPilih [1/2/3/4] : ";cin>>satuan;
     switch(satuan){
